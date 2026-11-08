@@ -65,9 +65,16 @@ node --test "test/*.test.mjs"     # 101 tests, 101 pass
 
 ## Security
 
-No credentials are committed. Proxy URLs, account tokens and dashboard passwords are
-read at runtime from files outside the repository. All proxy URLs in logs and API
-responses are masked (`http://user:***@host:port`).
+No credentials are committed. Everything secret is read at runtime:
+
+| Value | Source |
+|---|---|
+| Google OAuth client secret | `ANTIGRAVITY_CLIENT_SECRET` environment variable |
+| Proxy pool | `~/.config/opencode/opencode_proxies.json` |
+| Account tokens | `~/.local/share/opencode/` (the opencode database) |
+| Dashboard password | `~/.local/share/opencode/ag-dashboard-auth` (tests read it too) |
+
+All proxy URLs in logs and API responses are masked (`http://user:***@host:port`).
 
 ## Notes
 
