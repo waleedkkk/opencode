@@ -1,0 +1,9 @@
+{
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Antigravity/2.29.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+  "apiClient": "google-cloud-sdk vscode_cloudshelleditor/0.1",
+  "clientMetadata": {
+    "ideType": "ANTIGRAVITY",
+    "platform": "PLATFORM_UNSPECIFIED",
+    "pluginType": "GEMINI"
+  }
+}
